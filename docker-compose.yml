@@ -12,17 +12,6 @@ services:
       RDB_URL: rethinkdb://rethinkdb:28015/rethinkws
     depends_on:
       - rethinkdb
-  mysql:
-    image: mysql:5.7
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: rethinkws_development
-      MYSQL_USER: rethinkws
-      MYSQL_PASSWORD: rethinkws
-    volumes:
-      - ~/dockerdata/rethink_ws/mysql:/var/lib/mysql
-    ports:
-      - "3306:3306"
   rethinkdb:
       image: rethinkdb:2.3
       ports:
