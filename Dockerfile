@@ -9,7 +9,8 @@ build-essential \
 nodejs
 
 WORKDIR /home/docker/rethink_ws
-USER docker
 
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile ./
 RUN gem install bundler && bundle install --jobs 20 --retry 5
+
+USER docker

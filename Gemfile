@@ -9,6 +9,9 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 
+gem 'nobrainer'
+gem 'nobrainer_streams'
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'

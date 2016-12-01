@@ -18,3 +18,7 @@ services:
       - ~/dockerdata/rethink_ws/mysql:/var/lib/mysql
     ports:
       - "3306:3306"
+  rethinkdb:
+      image: rethinkdb:2.3
+      ports:
+        - "8080:8080"
